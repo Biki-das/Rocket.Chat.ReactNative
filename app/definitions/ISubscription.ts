@@ -40,7 +40,7 @@ export interface ISubscription {
 	unread: number;
 	userMentions: number;
 	groupMentions: number;
-	tunread?: string[];
+	tunread: string[];
 	tunreadUser?: string[];
 	tunreadGroup?: string[];
 	roomUpdatedAt: Date;
@@ -80,6 +80,7 @@ export interface ISubscription {
 	avatarETag?: string;
 	teamId?: string;
 	teamMain?: boolean;
+	separator?: boolean;
 	// https://nozbe.github.io/WatermelonDB/Relation.html#relation-api
 	messages: Relation<TMessageModel>;
 	threads: Relation<TThreadModel>;
